@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    margin: 0;
+ padding: 0;
+font-family: 'poppins', sans-serif;
+ box-sizing: border-box;}
+/* center the nav bar*/
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+nav.menu-img{
+    width: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+nav.logo{
+    width: 160px;
+    cursor: pointer;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+
+.lamp-container{
+    position: absolute;
+    top: 0px;
+    left: 27.5%;
+    width: 200px;
+}
+.lamp{
+    width: 100%;
+}
+.light{
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: -7px;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+}
+.text-container{
+    max-width: 700px;
+    margin-top: 7%;
+    margin-left: 50%;
+}
+.text-container h1{
+    font-size: 80px;
+    font-weight: 400;
+}
+.text-container a{
+    text-decoration: none;
+    background: #00986F;
+    padding: 16px 40px;
+    display: inline-block;
+    color: #fff;
+    font-weight: 18px;
+    margin-top: 30px;
+    border-radius: 30px;
+
+}
+
+
+.active{
+    background: green;
+}
+.active span{
+    background: #fff;
+    margin-left: 31px;
+
+}
+.on {
+    opacity: 1;
+}
